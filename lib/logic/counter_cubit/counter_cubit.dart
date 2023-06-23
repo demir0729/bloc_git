@@ -1,8 +1,9 @@
 import 'package:bloc/bloc.dart';
-import 'package:bloc_git/counter_cubit/counter_state.dart';
+import 'package:bloc_git/logic/counter_cubit/counter_state.dart';
 
 class CounterCubit extends Cubit<CounterState> {
-  CounterCubit() : super(CounterState(countValue: 0, wasIncremented: false));
+  CounterCubit()
+      : super(const CounterState(countValue: 0, wasIncremented: false));
 
   void increment() => emit(
       CounterState(countValue: state.countValue + 1, wasIncremented: true));
