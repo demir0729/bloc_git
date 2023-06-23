@@ -1,8 +1,8 @@
-import 'package:bloc_git/business_logic/cubits/counter_cubit/counter_cubit.dart';
+import 'package:bloc_git/counter_cubit/counter_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'business_logic/cubits/counter_cubit/counter_state.dart';
+import 'counter_cubit/counter_state.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
